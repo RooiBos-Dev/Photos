@@ -42,3 +42,17 @@ catch (FileNotFoundException ex)
 
 }
 }
+
+
+/*public void whenAppendStringUsingBufferedWritter_thenOldContentShouldExistToo() 
+  throws IOException {
+    String fileName = "";
+    BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+    for (int i = 0; i < arr.length; i++) {
+        String object = arr[i];
+        writer.append(object);
+        
+    }
+     
+    writer.close();
+}*/
