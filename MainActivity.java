@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MainActivity {
+public class MainActivity extends Photo{
 
   public static void main(String[] args){
 
@@ -16,6 +16,7 @@ public class MainActivity {
 
       String inputFormat = sc.nextLine();
       int num_photos = Integer.parseInt(inputFormat);
+      ArrayList<Photo> photos = new ArrayList<Photo>();
       String dimension;
       int num_tags;
       for (int i = 0; i < num_photos; i++){
@@ -29,8 +30,9 @@ public class MainActivity {
         }
         arr.remove(0);
         arr.remove(0);
-
-
+        Photo obj = new Photo(dimension,arr);
+        photos.add(obj);
+      }
 
 }
 catch (FileNotFoundException ex)
